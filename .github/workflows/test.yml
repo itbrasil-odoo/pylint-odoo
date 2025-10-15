@@ -72,10 +72,4 @@ jobs:
         ls -lah dist/*
         python -m twine upload --verbose -u __token__ -p ${{ secrets.PYPI_API_TOKEN }} --repository-url https://upload.pypi.org/legacy/ dist/*
     #TODO: Add GITHUB_RUN_ID.GITHUB_RUN_ATTEMPT.GITHUB_RUN_NUMBER to bumpversion to avoid duplicating upload versions or even the git sha
-    - name: codecov
-      if: startsWith(matrix.tox_env, 'py')  # only coveralls in python tests
-      uses: codecov/codecov-action@v5
-      with:
-        fail_ci_if_error: true
-        verbose: true
-        token: ${{ secrets.CODECOV_TOKEN }}
+    # Codecov removed: requires paid service. Documented in README.
