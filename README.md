@@ -2,10 +2,6 @@
 
 [![Build Status](https://github.com/itbrasil-odoo/pylint-odoo/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/itbrasil-odoo/pylint-odoo/actions/workflows/test.yml?query=branch%3Amain)
 [![code-style-black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![version](https://img.shields.io/pypi/v/pylint-odoo.svg)](https://pypi.org/project/pylint-odoo)
-[![pypi-downloads-monthly](https://img.shields.io/pypi/dm/pylint-odoo.svg?style=flat)](https://pypi.python.org/pypi/pylint-odoo)
-[![supported-versions](https://img.shields.io/pypi/pyversions/pylint-odoo.svg)](https://pypi.org/project/pylint-odoo)
-[![wheel](https://img.shields.io/pypi/wheel/pylint-odoo.svg)](https://pypi.org/project/pylint-odoo)
 [![commits-since](https://img.shields.io/github/commits-since/itbrasil-odoo/pylint-odoo/v9.3.21.svg)](https://github.com/itbrasil-odoo/pylint-odoo/compare/v9.3.21...main)
 
 [//]: # (end-badges)
@@ -90,7 +86,9 @@ You do not need to install manually if you use pre-commit-config
 
 But if you even need to install it
 
-    pip install pylint-odoo
+    $ git clone https://github.com/itbrasil-odoo/pylint-odoo.git
+    $ cd pylint-odoo
+    $ pip install -e .
 
 # Usage pre-commit-config.yaml
 
